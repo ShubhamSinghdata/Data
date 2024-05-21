@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Page Loader</title>
+      <style>
+        body{
+            background-color: black;
+            justify-content: center ;
+            align-items: center;
+            
+        }
+          h1 {
+            text-align: center;
+          }
+          .ring1 {
+            border: 20px solid rgb(211, 211, 211);
+            position: absolute;
+            left: 35%;
+            border-radius: 50%;
+            border-top: 20px solid red;
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+          }
+          .ring2 {
+            border: 20px solid rgb(211, 211, 211);
+            position: absolute;
+            top:40%;
+            left: 50%;
+            border-radius: 50%;
+            border-top: 20px solid #eb4335; /* red */
+            border-bottom: 20px solid #4285f4; /* blue */
+            border-right: 20px solid #fbbc05; /* yellow */
+            border-left:20px solid #34a853; /* green */
+            width: 120px;
+            height: 120px;
+            font-size: 100px;
+            justify-content: center;
+            align-items: center;
+        
+            animation: spin 1s linear infinite;
+          }
+         
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+            
+            
+          }
+          @media screen and (max-width:620px){
+            body{
+              display: block;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+      </style>
+   </head>
+   <body>
+      <h1>Please wait...</h1>
+      <!-- <div class="ring1"> </div> -->
+      <div class="ring2" > <a href="overview_retry.html" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;.</a></div>
+   </body>
+</html>
